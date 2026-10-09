@@ -23,3 +23,7 @@ usuarioDAO.read(usuario.id);
 usuario.nome = "Bruna Gomes";
 usuarioDAO.update(usuario);
 usuarioDAO.read(usuario.id);
+
+usuario = new Usuario(0, "Carlos Pereira", "2009-11-15");
+usuarioDAO.create(usuario);
+usuarioDAO.read(usuario.id);
