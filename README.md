@@ -205,24 +205,24 @@ Em Node.js com TypeScript, escreva um algoritmo que:
   - Atualizar os veículos cadastrados.
   - Excluir os veículos cadastrados.
 
-2. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma padaria. Considere as tabelas:
+2. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma padaria, empregando o padrão "Data Access Object" (DAO). Considere as tabelas:
   - Cliente(id_cliente, nome),
   - Pedido(id_pedido, id_cliente, data_pedido, total),
   - Produto(id_produto, nome, preco) e
   - ItemPedido(id_pedido, id_produto, quantidade).
 
 
-3. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma agência de viagens. Considere as tabelas:
+3. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma agência de viagens, empregando o padrão "Data Access Object" (DAO). Considere as tabelas:
   - Cliente(id_cliente, nome),
   - Reserva(id_reserva, id_cliente, id_destino, data_viagem, valor) e
   - Destino(id_destino, nome_destino, pais).
 
-4. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma clínica médica. Considere as tabelas:
+4. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma clínica médica, empregando o padrão "Data Access Object" (DAO). Considere as tabelas:
   - Paciente(id_paciente, nome),
   - Medico(id_medico, nome, especialidade) e
   - Consulta(id_consulta, id_paciente, id_medico, data_consulta, valor).
 
-5. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma farmácia. Considere as tabelas:
+5. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma farmácia, empregando o padrão "Data Access Object" (DAO). Considere as tabelas:
   - Medicamento(id_medicamento, nome, preco),
   - Fornecedor(id_fornecedor, nome, cidade) e
   - Compra(id_compra, id_medicamento, id_fornecedor, quantidade, data_compra).
