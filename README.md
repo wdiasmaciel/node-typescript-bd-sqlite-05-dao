@@ -59,6 +59,8 @@ Crie o arquivo `.gitignore` com o conteúdo abaixo:
 node_modules/
 ```
 
+Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `TypeScript: Restart TS Server` e pressione `<ENTER>`. Como o VS Code pode exibir diagnósticos antigos, a execução de `TypeScript: Restart TS Server` na Paleta de Comandos atualiza a verificação do VS Code.`
+
 ###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
 ```json
