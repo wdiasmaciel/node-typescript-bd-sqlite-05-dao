@@ -1,6 +1,6 @@
 import type { DatabaseSync } from "node:sqlite";
-import { ConnectionFactory } from "../database/ConnectionFactory.js";
-import { Usuario } from "../model/Usuario.js";
+import { ConnectionFactory } from "../database/ConnectionFactory.ts";
+import { Usuario } from "../model/Usuario.ts";
 
 export class UsuarioDAO {
   private readonly connectionFactory: ConnectionFactory;
