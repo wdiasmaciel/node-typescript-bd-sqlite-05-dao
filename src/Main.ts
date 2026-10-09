@@ -5,7 +5,7 @@ const usuarioDAO = new UsuarioDAO();
 
 usuarioDAO.createTable();
 
-const usuario = new Usuario(0, "Ana", "2000-06-07");
+let usuario = new Usuario(0, "Ana", "2000-06-07");
 usuarioDAO.create(usuario);
 usuarioDAO.read(usuario.id);
 
@@ -14,4 +14,12 @@ usuarioDAO.update(usuario);
 usuarioDAO.read(usuario.id);
 
 usuarioDAO.delete(usuario);
+usuarioDAO.read(usuario.id);
+
+usuario = new Usuario(0, "Bruna", "2006-08-07");
+usuarioDAO.create(usuario);
+usuarioDAO.read(usuario.id);
+
+usuario.nome = "Bruna Gomes";
+usuarioDAO.update(usuario);
 usuarioDAO.read(usuario.id);
