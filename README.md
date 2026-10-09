@@ -36,6 +36,23 @@ npm init -y
 npm install -D typescript @types/node
 ```
 
+Crie o arquivo `tsconfig.json` com o conteúdo abaixo:
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts"]
+}
+```
+
 ###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
 ```json
