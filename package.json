@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao/issues"
   },
-  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
+  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
 }
