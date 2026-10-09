@@ -9,10 +9,11 @@ const defaultDatabasePath = resolve(
 );
 
 export class ConnectionFactory {
-  constructor(
-    private readonly databasePath =
-      process.env.SQLITE_DB_PATH ?? defaultDatabasePath,
-  ) {}
+  private readonly databasePath: string;
+
+  constructor() {
+    this.databasePath = process.env.SQLITE_DB_PATH ?? defaultDatabasePath;
+  }
 
   createConnection(): DatabaseSync {
     try {
