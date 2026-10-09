@@ -65,7 +65,7 @@ O arquivo `.env` é opcional e deve ficar na raiz do projeto. Para definir um ca
 SQLITE_DB_PATH=./src/database/banco_de_dados.bd
 ```
 
-Se o arquivo `.env` não existir ou `SQLITE_DB_PATH` não estiver definida, a aplicação usará `src/database/teste.db`. Para um caminho personalizado, a pasta indicada deve existir e permitir gravação; o SQLite cria o arquivo do banco, mas não cria as pastas.
+Se o arquivo `.env` não existir ou a variável de ambiente `SQLITE_DB_PATH` não estiver definida, a aplicação usará `src/database/teste.db`. Para um caminho personalizado, a pasta indicada deve existir e permitir gravação; o SQLite cria o arquivo do banco, mas não cria as pastas.
 
 Caso seja necessário, execute `CTRL + SHIFT + P`, informe `TypeScript: Restart TS Server` e pressione `<ENTER>`. Isso atualiza os diagnósticos do TypeScript no VS Code.
 
