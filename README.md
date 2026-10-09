@@ -95,7 +95,7 @@ Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `Typ
 
 ###  No arquivo `package.json`, inserir as linhas:
 ```json
-    "dev": "node --watch ./src/Main.ts",
+    "dev": "node --env-file=.env --watch ./src/Main.ts",
     "start": "npm run dev"
 ```
 
@@ -107,7 +107,7 @@ Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `Typ
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch ./src/Main.ts",
+    "dev": "node --env-file=.env --watch ./src/Main.ts",
     "start": "npm run dev"
   },
   "repository": {
@@ -121,9 +121,14 @@ Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `Typ
   "bugs": {
     "url": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao/issues"
   },
-  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
+  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
 }
 ```
+
 ### Executar
  
 ```bahs
