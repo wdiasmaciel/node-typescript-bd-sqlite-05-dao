@@ -3,9 +3,9 @@ export class Usuario {
   public nome: string;
   public nascimento: string | null;
   
-  constructor() {
-    this.id = 0;
-    this.nome = "";
-    this.nascimento = null;
+  constructor(id: number, nome: string, nascimento: string | null) {
+    this.id = id || 0;
+    this.nome = nome || "";
+    this.nascimento = nascimento || null;
   }
 }
