@@ -62,7 +62,7 @@ node_modules/
 O arquivo `.env` é opcional e deve ficar na raiz do projeto. Para definir um caminho personalizado para o banco, crie o arquivo com o conteúdo abaixo:
 
 ```txt
-SQLITE_DB_PATH=./src/database/banco_de_dados.bd
+SQLITE_DB_PATH=./src/database/banco_de_dados.db
 ```
 
 Se o arquivo `.env` não existir ou a variável de ambiente `SQLITE_DB_PATH` não estiver definida, a aplicação usará `src/database/teste.db`. Para um caminho personalizado, a pasta indicada deve existir e permitir gravação; o SQLite cria o arquivo do banco, mas não cria as pastas.
