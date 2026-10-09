@@ -3,9 +3,11 @@ import { ConnectionFactory } from "../database/ConnectionFactory.js";
 import { Usuario } from "../model/Usuario.js";
 
 export class UsuarioDAO {
-  constructor(
-    private readonly connectionFactory = new ConnectionFactory()
-  ) {}
+  private readonly connectionFactory: ConnectionFactory;
+
+  constructor() {
+    this.connectionFactory = new ConnectionFactory();
+  }  
   
   // Método para criar a tabela Usuário:
   createTable(): void {
