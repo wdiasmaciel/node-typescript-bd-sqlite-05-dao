@@ -1,10 +1,10 @@
 # node-typescript-bd-sqlite-05-dao
 
-### SQLite Explorer
+### SQLite Viewer and SQLite Editor for VS Code
 
-No Codespace, instalar a extensão (plugin) VS Code `SQLite Explorer` for VS Code: 
+No Codespace, instalar a extensão (plugin) VS Code `SQLite Viewer and SQLite Editor for VS Code` for VS Code: 
 
-![Alt: extensão (plugin) SQLite Explorer for VS Code.](SQLiteExplorer.png)
+![Alt: extensão (plugin) SQLite Viewer and SQLite Editor for VS Code for VS Code.](SQLiteViewerAndSQLiteEditorForVSCode.png)
 
 ### Iniciar um projeto `Node.js`:
 
