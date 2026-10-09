@@ -54,7 +54,7 @@ npm init -y
 
 3. No arquivo `package.json`, inserir as linhas:
 ```json
-    "dev": "node --watch ./src/Main.js",
+    "dev": "node --watch ./src/Main.ts",
     "start": "npm run dev"
 ```
 
@@ -66,7 +66,7 @@ npm init -y
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch ./src/Main.js",
+    "dev": "node --watch ./src/Main.ts",
     "start": "npm run dev"
   },
   "repository": {
