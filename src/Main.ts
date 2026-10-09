@@ -1,5 +1,5 @@
-import { UsuarioDAO } from "./dao/UsuarioDAO.js";
-import { Usuario } from "./model/Usuario.js";
+import { UsuarioDAO } from "./dao/UsuarioDAO.ts";
+import { Usuario } from "./model/Usuario.ts";
 
 const usuarioDAO = new UsuarioDAO();
 
