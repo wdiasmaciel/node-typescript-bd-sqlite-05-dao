@@ -53,6 +53,12 @@ Crie o arquivo `tsconfig.json` com o conteúdo abaixo:
 }
 ```
 
+Crie o arquivo `.gitignore` com o conteúdo abaixo:
+
+```txt
+node_modules/
+```
+
 ###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
 ```json
