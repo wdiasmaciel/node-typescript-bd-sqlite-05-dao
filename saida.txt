@@ -4,7 +4,7 @@
 
 
 > typescript-bd-sqlite-05-dao@1.0.0 dev
-> node --watch ./src/Main.ts
+> node --env-file=.env --watch ./src/Main.ts
 
 Conexão com SQLite estabelecida!
 Tabela 'usuario' criada ou já existe!
@@ -12,7 +12,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO GRAVADO NO BANCO DE DADOS: 
 
-        ID: 1
+        ID: 4
 
         NOME: Ana
 
@@ -22,7 +22,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO LIDO DO BANCO DE DADOS: 
 
-        ID: 1
+        ID: 4
 
         NOME: Ana
 
@@ -34,7 +34,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO LIDO DO BANCO DE DADOS: 
 
-        ID: 1
+        ID: 4
 
         NOME: Ana Silva
 
@@ -48,7 +48,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO GRAVADO NO BANCO DE DADOS: 
 
-        ID: 2
+        ID: 5
 
         NOME: Bruna
 
@@ -58,7 +58,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO LIDO DO BANCO DE DADOS: 
 
-        ID: 2
+        ID: 5
 
         NOME: Bruna
 
@@ -70,7 +70,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO LIDO DO BANCO DE DADOS: 
 
-        ID: 2
+        ID: 5
 
         NOME: Bruna Gomes
 
@@ -80,7 +80,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO GRAVADO NO BANCO DE DADOS: 
 
-        ID: 3
+        ID: 6
 
         NOME: Carlos Pereira
 
@@ -90,7 +90,7 @@ Conexão com SQLite estabelecida!
 
         USUÁRIO LIDO DO BANCO DE DADOS: 
 
-        ID: 3
+        ID: 6
 
         NOME: Carlos Pereira
 

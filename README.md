@@ -59,13 +59,15 @@ Crie o arquivo `.gitignore` com o conteúdo abaixo:
 node_modules/
 ```
 
-Crie um arquivo chamado `.env` na raiz do projeto com o conteúdo abaixo:
+O arquivo `.env` é opcional e deve ficar na raiz do projeto. Para definir um caminho personalizado para o banco, crie o arquivo com o conteúdo abaixo:
 
 ```txt
 SQLITE_DB_PATH=./src/database/banco_de_dados.bd
 ```
 
-Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `TypeScript: Restart TS Server` e pressione `<ENTER>`. Como o VS Code pode exibir diagnósticos antigos, a execução de `TypeScript: Restart TS Server` na Paleta de Comandos atualiza a verificação do VS Code.`
+Se o arquivo `.env` não existir ou `SQLITE_DB_PATH` não estiver definida, a aplicação usará `src/database/teste.db`. Para um caminho personalizado, a pasta indicada deve existir e permitir gravação; o SQLite cria o arquivo do banco, mas não cria as pastas.
+
+Caso seja necessário, execute `CTRL + SHIFT + P`, informe `TypeScript: Restart TS Server` e pressione `<ENTER>`. Isso atualiza os diagnósticos do TypeScript no VS Code.
 
 ###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
@@ -95,7 +97,7 @@ Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `Typ
 
 ###  No arquivo `package.json`, inserir as linhas:
 ```json
-    "dev": "node --env-file=.env --watch ./src/Main.ts",
+    "dev": "node --env-file-if-exists=.env --watch ./src/Main.ts",
     "start": "npm run dev"
 ```
 
@@ -107,7 +109,7 @@ Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `Typ
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --env-file=.env --watch ./src/Main.ts",
+    "dev": "node --env-file-if-exists=.env --watch ./src/Main.ts",
     "start": "npm run dev"
   },
   "repository": {
@@ -142,7 +144,7 @@ npm start
 
 
 > typescript-bd-sqlite-05-dao@1.0.0 dev
-> node --watch ./src/Main.ts
+> node --env-file-if-exists=.env --watch ./src/Main.ts
 
 Conexão com SQLite estabelecida!
 Tabela 'usuario' criada ou já existe!
@@ -233,7 +235,6 @@ Conexão com SQLite estabelecida!
         NOME: Carlos Pereira
 
         DATA DE NASCIMENTO: 2009-11-15
-      
 ```
 
 # Exercício
