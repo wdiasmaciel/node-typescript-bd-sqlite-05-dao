@@ -4,6 +4,7 @@
 
 No Codespace, instalar a extensão (plugin) VS Code SQLite Viewer for VS Code: 
 
+![Alt: extensão (plugin) SQLite Viewer for VS Code.](SQLiteViewerForVSCode.png)
 
 ### Iniciar um projeto `Node.js`:
 
