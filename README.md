@@ -89,3 +89,11 @@ npm init -y
   "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
 }
 ```
+### Executar
+ 
+```bahs
+npm start
+```
+
+# Exercício
+
