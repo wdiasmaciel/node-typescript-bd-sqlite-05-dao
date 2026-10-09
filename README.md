@@ -8,7 +8,7 @@ npm init -y
 
 2. No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
-```js
+```json
 {
   "name": "typescript-bd-sqlite-05-dao",
   "version": "1.0.0",
