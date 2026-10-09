@@ -1,5 +1,33 @@
 # node-typescript-bd-sqlite-05-dao
 
+1. Iniciar um projeto `Node.js`:
+
 ```bash
 npm init -y
+```
+
+2. No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
+
+```text
+{
+  "name": "typescript-bd-sqlite-05-dao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao/issues"
+  },
+  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
+}
 ```
