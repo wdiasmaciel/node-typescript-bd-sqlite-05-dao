@@ -31,3 +31,35 @@ npm init -y
   "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
 }
 ```
+
+3. No arquivo `package.json`, inserir as linhas:
+```json
+    "dev": "node --watch ./src/Main.js",
+    "start": "npm run dev"
+```
+
+```json
+{
+  "name": "typescript-bd-sqlite-05-dao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./src/Main.js",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao/issues"
+  },
+  "homepage": "https://github.com/wdiasmaciel/node-typescript-bd-sqlite-05-dao#readme"
+}
+```
