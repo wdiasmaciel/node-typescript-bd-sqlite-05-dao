@@ -1,6 +1,11 @@
 # node-typescript-bd-sqlite-05-dao
 
-1. Iniciar um projeto `Node.js`:
+### SQLite Viewer
+
+No Codespace, instalar a extensão (plugin) VS Code SQLite Viewer for VS Code: 
+
+
+### Iniciar um projeto `Node.js`:
 
 ```bash
 sudo apt update
@@ -26,7 +31,7 @@ npm -v
 npm init -y
 ```
 
-2. No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
+###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
 ```json
 {
@@ -52,7 +57,7 @@ npm init -y
 }
 ```
 
-3. No arquivo `package.json`, inserir as linhas:
+###  No arquivo `package.json`, inserir as linhas:
 ```json
     "dev": "node --watch ./src/Main.ts",
     "start": "npm run dev"
