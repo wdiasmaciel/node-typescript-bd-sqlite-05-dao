@@ -201,9 +201,9 @@ Conexão com SQLite estabelecida!
 Em Node.js com TypeScript, escreva um algoritmo que:
 
 1. Cadastre veículos no banco de dados SQLite, segundo o padrão "Data Access Object" (DAO). O algoritmo deve permitir que o usuário cadastre quantos veículos forem necessários. A classe Veiculo deve possuir as propriedades: marca, modelo, número do chassi, placa e cor. Após cadastrar todos os veículos, o algoritmo deve permitir:
-  a. Consultar os veículos cadastrados.
-  b. Atualizar os veículos cadastrados.
-  c. Excluir os veículos cadastrados.
+  - Consultar os veículos cadastrados.
+  - Atualizar os veículos cadastrados.
+  - Excluir os veículos cadastrados.
 
 2. Implemente o CRUD (Create, Read, Update, Delete) do banco de dados de uma padaria. Considere as tabelas:
   - Cliente(id_cliente, nome),
