@@ -62,7 +62,7 @@ node_modules/
 Crie um arquivo chamado `.env` na raiz do projeto com o conteúdo abaixo:
 
 ```txt
-SQLITE_DB_PATH=./db/teste.db
+SQLITE_DB_PATH=./src/database/banco_de_dados.bd
 ```
 
 Caso seja necessário em algum momento, execute `CTRL + SHIFT + p`, informe `TypeScript: Restart TS Server` e pressione `<ENTER>`. Como o VS Code pode exibir diagnósticos antigos, a execução de `TypeScript: Restart TS Server` na Paleta de Comandos atualiza a verificação do VS Code.`
