@@ -11,6 +11,17 @@ const defaultDatabasePath = resolve(
 export class ConnectionFactory {
   private readonly databasePath: string;
 
+  /*
+   * ??: usa o caminho padrão apenas quando SQLITE_DB_PATH é null ou undefined. 
+   * ||: também usa o padrão quando o valor é vazio (""), 0 ou false.
+   * Como variáveis de ambiente são strings, a diferença prática aqui é quando 
+   * SQLITE_DB_PATH existe, mas está vazia:
+   * ??: mantém "" como caminho.
+   * ||: trata "" como não configurada e usa defaultDatabasePath.
+   * Se um valor vazio deve significar “usar o padrão”, use ||. 
+   * Se prefere detectar e reportar uma configuração vazia como inválida, mantenha ?? 
+   * e valide-a explicitamente.
+   */
   constructor() {
     this.databasePath = process.env.SQLITE_DB_PATH ?? defaultDatabasePath;
   }
