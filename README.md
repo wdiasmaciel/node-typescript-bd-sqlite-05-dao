@@ -198,3 +198,48 @@ Conexão com SQLite estabelecida!
 
 # Exercício
 
+Em Node.js com TypeScript, escreva um algoritmo que:
+
+1. Cadastre veículos no banco de dados SQLite, segundo o padrão "Data Access Object" (DAO). O algoritmo deve permitir que o usuário cadastre quantos veículos forem necessários. A classe Veiculo deve possuir as propriedades: marca, modelo, número do chassi, placa e cor. Após cadastrar todos os veículos, o algoritmo deve permitir:
+  a. Consultar os veículos cadastrados.
+  b. Atualizar os veículos cadastrados.
+  c. Excluir os veículos cadastrados.
+
+2) Banco de uma padaria
+Considere as tabelas:
+
+Cliente(id_cliente, nome),
+
+Pedido(id_pedido, id_cliente, data_pedido, total),
+
+Produto(id_produto, nome, preco) e
+
+ItemPedido(id_pedido, id_produto, quantidade).
+
+
+3) Banco de uma agência de viagens
+Considere as tabelas:
+
+Cliente(id_cliente, nome),
+
+Reserva(id_reserva, id_cliente, id_destino, data_viagem, valor) e
+
+Destino(id_destino, nome_destino, pais).
+
+4) Banco de uma clínica médica
+Considere as tabelas:
+
+Paciente(id_paciente, nome),
+
+Medico(id_medico, nome, especialidade) e
+
+Consulta(id_consulta, id_paciente, id_medico, data_consulta, valor).
+
+5) Banco de uma farmácia
+Considere as tabelas:
+
+Medicamento(id_medicamento, nome, preco),
+
+Fornecedor(id_fornecedor, nome, cidade) e
+
+Compra(id_compra, id_medicamento, id_fornecedor, quantidade, data_compra).
