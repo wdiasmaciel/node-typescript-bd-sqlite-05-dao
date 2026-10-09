@@ -3,6 +3,26 @@
 1. Iniciar um projeto `Node.js`:
 
 ```bash
+sudo apt update
+```
+
+```bash
+sudo apt install -y nodejs
+```
+
+```bash
+node -v
+```
+
+```bash
+npm install -g npm@11.19.0
+```
+
+```bash
+npm -v
+```
+
+```bash
 npm init -y
 ```
 

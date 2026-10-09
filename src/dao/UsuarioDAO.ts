@@ -4,7 +4,7 @@ import { Usuario } from "../model/Usuario.js";
 
 export class UsuarioDAO {
   constructor(
-    private readonly connectionFactory = new ConnectionFactory(),
+    private readonly connectionFactory = new ConnectionFactory()
   ) {}
   
   // Método para criar a tabela Usuário:
@@ -55,7 +55,7 @@ export class UsuarioDAO {
     return this.withConnection((connection) => {
       const row = connection
         .prepare(
-          "SELECT id, nome, nascimento FROM usuario WHERE id = ?",
+          "SELECT id, nome, nascimento FROM usuario WHERE id = ?"
         )
         .get(id);
 
@@ -73,26 +73,31 @@ export class UsuarioDAO {
       }
 
       const usuario = new Usuario(row.id, row.nome, row.nascimento);
-      console.log(
-        `USUÁRIO LIDO DO BANCO DE DADOS: \nID: ${usuario.id}\nNOME: ${usuario.nome}\nDATA DE NASCIMENTO: ${usuario.nascimento}`,
-      );
+      console.log(`
+        USUÁRIO LIDO DO BANCO DE DADOS: \n
+        ID: ${usuario.id}\n
+        NOME: ${usuario.nome}\n
+        DATA DE NASCIMENTO: ${usuario.nascimento}
+      `);
       return usuario;
     });
   }
 
+  // Método para atualizar/modificar um registro inserido na tabela Usuário:
   update(usuario: Usuario): void {
     this.withConnection((connection) => {
       connection
         .prepare(
-          "UPDATE usuario SET nome = ?, nascimento = ? WHERE id = ?",
+          "UPDATE usuario SET nome = ?, nascimento = ? WHERE id = ?"
         )
         .run(usuario.nome, usuario.nascimento, usuario.id);
       console.log(
-        `O usuário ${usuario.nome} foi atualizado no banco de dados!`,
+        `O usuário ${usuario.nome} foi atualizado no banco de dados!`
       );
     });
   }
 
+  // Método para excluir um registro inserido na tabela Usuário:
   delete(usuario: Usuario): void {
     this.withConnection((connection) => {
       connection
