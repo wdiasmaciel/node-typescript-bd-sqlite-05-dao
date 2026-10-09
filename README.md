@@ -32,6 +32,10 @@ npm -v
 npm init -y
 ```
 
+```bash
+npm install -D typescript @types/node
+```
+
 ###  No arquivo `package.json`, substituir `"type": "commonjs",`  por `"type": "module",`:
 
 ```json
